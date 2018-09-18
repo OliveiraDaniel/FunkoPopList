@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import Header from "./Header";
 import List from "./List"
+import FormFunko from "./FormFunko";
 
 class Home extends Component {
   constructor() {
@@ -10,10 +11,27 @@ class Home extends Component {
       title: "funkos",
       styles : `
         .list-funkos{
-			width: 480px;
-			display: block;
-			margin: 30px auto;
+          width: 90%;
+          display: block;
+          margin: 30px auto;
+          position: relative;
         }
+
+      .form-funko{
+        width: 430px;
+        display: block;
+        margin: 30px auto;
+        height: auto;
+        position: relative;
+      }
+
+      .conteiner-showcase{
+        display: block;
+        margin: 40px auto;
+        position: relative;
+        height: 265px;
+        width: 92%;
+      }
 
         .conteiner-input{
 			display: block;
@@ -44,6 +62,39 @@ class Home extends Component {
 			margin: 25px auto;
 			display: block;
         }
+      
+      .item-list{
+        width:228px;
+        height:235px;
+        display:inline-block;
+        margin:10px;
+        float:left;
+        border:1px solid #e3e3e3;
+      }
+
+      .item-list:hover{
+        box-shadow: 0px 0px 5px 1px #d6d4d4;
+      }
+
+      .title-list{
+        display:block;
+        font-weight:bold;
+        text-align:center;
+        margin: 15px 0;
+      }
+
+      .item-list img{
+        display:block;
+        width:200px;
+        margin: 5px;
+      }
+
+      .date-list{
+        display:block;
+        font-size:10px;
+        color:#333333;
+        text-align:center;
+      }
 	 	  `
     };
   }

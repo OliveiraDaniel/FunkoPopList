@@ -9,6 +9,7 @@ class FormFunko extends Component {
         inputName:'',
         inputUrl: '',
         inputDate: '',
+        styleLoad: 'display:none',
       };
       this.onInputName = this.onInputName.bind(this);
       this.onInputUrl = this.onInputUrl.bind(this);
@@ -55,14 +56,19 @@ class FormFunko extends Component {
         })
 
         this.setState({
-            list:newList
+            list:newList,
         });
         
     }
+
+    
   
     render() {
       return (
         <div>
+            <div className='load-img'>
+                <img src='http://images.vivara.com.br/Stores/Vivara3/Others/lazyLoadImage.gif' />
+            </div>
             <div className='form-funko'>
                 <form>
                     <div className='conteiner-input'>

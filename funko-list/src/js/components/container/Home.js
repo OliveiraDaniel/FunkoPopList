@@ -29,7 +29,7 @@ class Home extends Component {
         display: block;
         margin: 40px auto;
         position: relative;
-        height: 265px;
+        height: auto;
         width: 92%;
       }
 
@@ -52,15 +52,17 @@ class Home extends Component {
         }
 
         .btn-send{
-			background: #e73e25;
-			border: none;
-			color: #fff;
-			padding: 10px;
-			border-radius: 5px;
-			font-weight: bold;
-			width: 50%;
-			margin: 25px auto;
-			display: block;
+			    background: #e73e25;
+          border: none;
+          color: #fff;
+          padding: 10px;
+          border-radius: 5px;
+          font-weight: bold;
+          width: 50%;
+          margin: 25px auto;
+          display: block;
+          text-align: center;
+          cursor: pointer;
         }
       
       .item-list{
@@ -94,6 +96,24 @@ class Home extends Component {
         font-size:10px;
         color:#333333;
         text-align:center;
+      }
+      .load-img{
+        width:150px;
+        height:150px;
+        position:absolute;
+        top:50%;
+        left:50%;
+        margin-left:-75px;
+        margin-top:-75px;
+        z-index:999999;
+        display:none;
+      }
+      .load-img img{
+        display:block;
+        width:150px;
+      }
+      .load-img.show{
+        display:block;
       }
 	 	  `
     };
